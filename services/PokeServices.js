@@ -6,7 +6,7 @@ export const getPokemon = () => {
 };
 
 export const getSelectedPokemon = (id) => {
-  return axios.get(`https://pokeapi.co/api/v2/pokemon${id}`).then((res) => {
+  return axios.get(`https://pokeapi.co/api/v2/pokemon/${id}`).then((res) => {
     return res.data;
   });
 };
